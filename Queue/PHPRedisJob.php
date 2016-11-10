@@ -6,14 +6,14 @@ use Illuminate\Queue\Jobs\Job;
 use Illuminate\Support\Arr;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Queue\Job as JobContract;
-use TargetLiu\PHPRedis\Queue\PHPRedisQueue;
+use Dahuicyh\PHPRedis\Queue\PHPRedisQueue;
 
 class PHPRedisJob extends Job implements JobContract
 {
     /**
      * The Redis queue instance.
      *
-     * @var \TargetLiu\PHPRedis\Queue\PHPRedisQueue
+     * @var \Dahuicyh\PHPRedis\Queue\PHPRedisQueue
      */
     protected $redis;
 
@@ -28,7 +28,7 @@ class PHPRedisJob extends Job implements JobContract
      * Create a new job instance.
      *
      * @param  \Illuminate\Container\Container $container
-     * @param  \TargetLiu\PHPRedis\Queue\PHPRedisQueue $redis
+     * @param  \Dahuicyh\PHPRedis\Queue\PHPRedisQueue $redis
      * @param  string $job
      * @param  string $queue
      */

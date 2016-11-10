@@ -7,8 +7,8 @@ hello world
 2.修改bootsarap->app.php文件
 
     //添加两条
-    $app->register(Funtv\PHPRedis\PHPRedisServiceProvider::class);
-    $app->register(Funtv\PHPRedis\Cache\CacheServiceProvider::class);
+    $app->register(Dahuicyh\PHPRedis\PHPRedisServiceProvider::class);
+    $app->register(Dahuicyh\PHPRedis\Cache\CacheServiceProvider::class);
 
 3.修改.env文件 CACHE_DRIVER=phpredis
 
